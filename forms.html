@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice with Forms</title>
+</head>
+<body>
+    <h1>Forms Practice</h1>
+    <form action="" method="POST">
+        <p>
+        <label for="name">Enter a username: </label>
+        <input type="text" placeholder="Enter name" id="name" name="username">
+        </p>
+
+        <p>
+        <label for="password">Enter a password: </label>
+        <input type="password" placeholder="Enter Password" id="password">
+        </p>
+
+        <p>
+        <label for="color">Enter a color: </label>
+        <input type="color" id="color">
+        </p>
+
+        <p>
+        <input type="number" id="number">
+        <label for="number">Enter a number: </label>
+        </p>
+
+        <button>Submit</button>
+    </form>
+
+    <h1>Search Google Here</h1>
+    <form action="https://www.google.com/search" method="GET">
+        <input type="text" placeholder="Enter what you want to search" name="q" id="q">
+        <button>Submit!</button>
+    </form>
+
+    <h2>More Inputs!</h2>
+    <form>
+        <input type="checkbox" name="checkme" id="checkme">
+        <label for="checkme">Practice with checkboxes. Check me!</label>
+        <p>
+            <label for="xs">XS</label>
+            <input type="radio" name="sizes" id="xs" value="extra_small">
+            <label for="s">S</label>
+            <input type="radio" name="sizes" id="s" value="small">
+            <label for="m">M</label>
+            <input type="radio" name="sizes" id="m" value="medium">
+            <label for="xl">XL</label>
+            <input type="radio" name="sizes" id="xl" value="extra_large">
+        </p>
+        <label for="meal">Please select a meal</label>
+        <select name="meal" id="meal">
+            <option value="fish">Fish</option>
+            <option value="vegan">Vegan</option>
+            <option value="Carnivore">Carnivore</option>
+            <option value="keto">Keto</option>
+        </select>
+        <p>
+            <label for="cheese">Select cheese amount:</label>
+            <input type="range" name="cheese" id="cheese" min=0 max=100 step=1>
+            <label for="num">Select a number here:</label>
+            <input type="number" min="0" max="500" step="2" id="num" name="num">
+        </p>
+        <button>Submit!</button>
+    </form>
+    
+</body>
+</html>

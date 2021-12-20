@@ -11,31 +11,81 @@
 <body>
     <h1>Heaviest Birds</h1>
     <table>
-        <tr>
-            <th>Animal Name</th>
-            <th>Header A</th>
-            <th>Header B</th>
-            <th>Header C</th>
-        </tr>
-        <tr>
-            <td>Ostrich</td>
-            <td>Data A</td>
-            <td>Data B</td>
-            <td>Data C</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Animal Name</th>
+                <th>Header A</th>
+                <th>Header B</th>
+                <th>Header C</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ostrich</td>
+                <td>Data A</td>
+                <td>Data B</td>
+                <td>Data C</td>
+            </tr>
 
-        <tr>
-            <td>Penguin</td>
-            <td>Data A</td>
-            <td>Data B</td>
-            <td>Data C</td>
-        </tr>
+            <tr>
+                <td>Penguin</td>
+                <td>Data A</td>
+                <td>Data B</td>
+                <td>Data C</td>
+            </tr>
 
-        <tr>
-            <td>Pidgeon</td>
-            <td>Data A</td>
-            <td>Data B</td>
-            <td>Data C</td>
+            <tr>
+                <td>Pidgeon</td>
+                <td>Data A</td>
+                <td>Data B</td>
+                <td>Data C</td>
+            </tr>
+        </tbody>
+        <tfooter>
+            <tr>
+                <td>Footer Content</td>
+                <td>Footer Content</td>
+                <td>Footer Content</td>
+                <td>Footer Content</td>
+            </tr>
+        </tfooter>
+    </table>
+
+    <h1>V2 (using colspan/rowspan)</h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan=2>Animal</th>
+                <th colspan=2>Average Mass</th>
+                <th rowspan=2>Flighted</th>
+            </tr>
+            <tr>
+                <th>KG</th>
+                <th>LB</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ostrich</td>
+                <td>104</td>
+                <td>230</td>
+                <td>No</td>
+            </tr>
+
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90</td>
+                <td>200</td>
+                <td>No</td>
+            </tr>
+
+            <tr>
+                <td>Wild Turkey</td>
+                <td>13.5</td>
+                <td>29.8</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>

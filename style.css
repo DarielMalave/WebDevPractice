@@ -1,0 +1,26 @@
+/* h1 {
+    color: purple;
+    background-color: black;
+}
+
+button {
+    color: magenta;
+    background-color: cyan;
+}
+
+p {
+    color: teal;
+} */
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+}
+
+p {
+    text-align: right;
+    text-decoration: overline blue;
+}
+
+/* text properties: text-align, font-weight, text-decoratioin, letter-spacing, 
+line-height */

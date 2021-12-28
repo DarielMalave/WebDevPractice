@@ -1,0 +1,15 @@
+.post a {
+    color: red;
+}
+
+footer > a {
+    color: pink;
+}
+
+h2 + p {
+    color: magenta;
+}
+
+input[type="password"] {
+    color: yellowgreen;
+}

@@ -56,6 +56,7 @@ function displayList(items, wrapper, rows_per_page, page) {
 
 function nextButton(pagination_bar) {
   let button = document.createElement('button');
+  let page_display = document.getElementById('current_page_display');
   button.innerText = "Next Page";
   pagination_bar.appendChild(button);
 
@@ -65,12 +66,14 @@ function nextButton(pagination_bar) {
     if (0 <= current_page.value && current_page.value < number_of_pages) {
       current_page.value ++;
       displayList(data_source, data_container, rows_per_page, current_page.value);
+      page_display.innerText = current_page.value;
     }
   });
 }
 
 function previousButton(pagination_bar) {
   let button = document.createElement('button');
+  let page_display = document.getElementById('current_page_display');
   button.innerText = "Previous Page";
   pagination_bar.appendChild(button);
 
@@ -80,10 +83,21 @@ function previousButton(pagination_bar) {
     if (1 < current_page.value && current_page.value <= number_of_pages) {
       current_page.value --;
       displayList(data_source, data_container, rows_per_page, current_page.value);
+      page_display.innerText = current_page.value;
     }
   });
 }
 
+// function pageCounter(pagination_bar, current_page) {
+//   let button = document.createElement('button');
+//   //let current_page_counter = document.getElementById('current_page_counter');
+//   button.id = 'current_page_count';
+//   button.innerText = current_page;
+
+//   pagination_bar.appendChild(button);
+// }
+
 displayList(data_source, data_container, rows_per_page, current_page);
 previousButton(pagination_bar);
 nextButton(pagination_bar);
+// pageCounter(pagination_bar, 1);
